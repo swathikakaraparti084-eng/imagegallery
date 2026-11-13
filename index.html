@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Image Gallery</h1>
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="city">City</button>
+      <button class="filter-btn" data-filter="people">People</button>
+    </div>
+  </header>
+
+  <main class="gallery">
+    <figure class="item" data-category="nature">
+      <img src="https://picsum.photos/id/1018/800/600" alt="Mountain lake">
+      <figcaption>Mountain Lake</figcaption>
+    </figure>
+    <figure class="item" data-category="city">
+      <img src="https://picsum.photos/id/1031/800/600" alt="City street">
+      <figcaption>City Street</figcaption>
+    </figure>
+    <figure class="item" data-category="people">
+      <img src="https://picsum.photos/id/1005/800/600" alt="Portrait">
+      <figcaption>Portrait</figcaption>
+    </figure>
+    <figure class="item" data-category="nature">
+      <img src="https://picsum.photos/id/1015/800/600" alt="River valley">
+      <figcaption>River Valley</figcaption>
+    </figure>
+    <figure class="item" data-category="city">
+      <img src="https://picsum.photos/id/1067/800/600" alt="Skyline">
+      <figcaption>Skyline</figcaption>
+    </figure>
+    <figure class="item" data-category="people">
+      <img src="https://picsum.photos/id/1011/800/600" alt="Kayaking">
+      <figcaption>Kayaking</figcaption>
+    </figure>
+    <figure class="item" data-category="nature">
+      <img src="https://picsum.photos/id/1043/800/600" alt="Forest">
+      <figcaption>Forest</figcaption>
+    </figure>
+    <figure class="item" data-category="city">
+      <img src="https://picsum.photos/id/1048/800/600" alt="Bridge">
+      <figcaption>Bridge</figcaption>
+    </figure>
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <button class="close" id="close" aria-label="Close">&times;</button>
+    <button class="nav prev" id="prev" aria-label="Previous">&#10094;</button>
+    <img id="lightbox-img" src="" alt="">
+    <button class="nav next" id="next" aria-label="Next">&#10095;</button>
+    <p id="lightbox-caption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

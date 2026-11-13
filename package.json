@@ -1,0 +1,13 @@
+{
+  "name": "image-gallery",
+  "version": "1.0.0",
+  "description": "A responsive image gallery with filters and a lightbox",
+  "scripts": {
+    "test": "jest"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}
